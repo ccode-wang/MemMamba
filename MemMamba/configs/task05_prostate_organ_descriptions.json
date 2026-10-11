@@ -1,0 +1,20 @@
+{
+  "organs": {
+    "1": {
+      "organ_name": "peripheral_zone",
+      "anatomical_location": "The peripheral zone forms the posterolateral outer portion of the prostate, surrounding much of the transition and central gland and lying near the prostatic capsule and rectum.",
+      "morphology": "It is a curved, relatively thin peripheral compartment whose thickness and continuity vary from the base to the apex.",
+      "boundary": "Its outer margin follows the prostatic capsule, while its inner interface with the transition zone can be subtle and partially indistinct.",
+      "neighboring_relations": "It is adjacent to the transition zone medially, the capsule and periprostatic tissues laterally, the rectum posteriorly, and the neurovascular bundles posterolaterally.",
+      "typical_appearance": "On T2-weighted MRI the normal peripheral zone is usually relatively high in signal, while suspicious tissue may be focally low in signal; on ADC maps the normal zone is usually relatively high in ADC signal, while diffusion-restricted suspicious tissue appears low in ADC signal."
+    },
+    "2": {
+      "organ_name": "transition_zone",
+      "anatomical_location": "The transition zone is the central periurethral glandular compartment, located inside the peripheral zone and extending between the prostate base and apex.",
+      "morphology": "It is a paired-to-confluent central structure with a compact rounded or ovoid contour that often becomes heterogeneous and nodular with benign prostatic hyperplasia.",
+      "boundary": "Its pseudocapsular interface with the peripheral zone may be visible on T2-weighted MRI but can be irregular or indistinct, especially with glandular enlargement.",
+      "neighboring_relations": "It surrounds the prostatic urethra, lies medial to the peripheral zone, inferior to the bladder neck, and anterior to the ejaculatory ducts and central gland structures.",
+      "typical_appearance": "On T2-weighted MRI the transition zone is commonly heterogeneous with mixed high- and low-signal nodules; on ADC maps its signal is also heterogeneous, while diffusion-restricted suspicious tissue tends to show lower ADC signal than adjacent benign tissue."
+    }
+  }
+}

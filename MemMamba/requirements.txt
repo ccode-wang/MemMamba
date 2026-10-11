@@ -1,0 +1,12 @@
+torch>=2.1,<2.6
+torchvision>=0.16,<0.21
+numpy>=1.24,<2.0
+h5py>=3.9,<4
+SimpleITK>=2.3,<3
+scipy>=1.10,<2
+medpy>=0.5,<1
+Pillow>=10.0,<12
+open_clip_torch>=2.24,<3
+transformers>=4.36,<5
+huggingface_hub>=0.20,<1
+tensorboard>=2.14,<3

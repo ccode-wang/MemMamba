@@ -1,0 +1,7 @@
+{
+  "classes": [
+    {"id": 0, "name": "background"},
+    {"id": 1, "name": "peripheral_zone"},
+    {"id": 2, "name": "transition_zone"}
+  ]
+}

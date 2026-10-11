@@ -1,0 +1,67 @@
+{
+  "defaults": {
+    "dataset_name": "task05_prostate",
+    "modality": [
+      "T2",
+      "ADC"
+    ],
+    "anatomy": "prostate",
+    "train_npz_dir": "/root/autodl-tmp/Prostate/train_npz",
+    "test_h5_dir": "/root/autodl-tmp/Prostate/test_vol_h5",
+    "expected_train_cases": 26,
+    "expected_eval_cases": 6,
+    "class_config": "configs/task05_prostate_classes.json",
+    "description_path": "configs/task05_prostate_organ_descriptions.json",
+    "semantic_embedding_path": "outputs/task05_prostate/semantic_embeddings/task05_prostate_semantic_embeddings.pt",
+    "visual_feature_path": "outputs/task05_prostate/visual_features/task05_prostate_visual_features.pt",
+    "alignment_teacher_path": "outputs/task05_prostate/visual_features/task05_prostate_alignment_teachers.pt",
+    "memory_bank_path": "outputs/task05_prostate/memory_bank/task05_prostate_multimodal_memory.pt",
+    "checkpoint_dir": "outputs/task05_prostate/checkpoints/MemMamba",
+    "log_dir": "outputs/task05_prostate/results/MemMamba/logs",
+    "result_path": "outputs/task05_prostate/results/MemMamba/test_results.txt",
+    "prediction_dir": "outputs/task05_prostate/predictions/MemMamba",
+    "cache_dir": "/root/autodl-tmp/pretrained/huggingface_cache",
+    "local_model_dir": null,
+    "image_size": 224,
+    "knowledge_warmup_epochs": 10,
+    "class_morphology": {
+      "1": {
+        "erosion_radius": 1,
+        "dilation_radius": 3
+      },
+      "2": {
+        "erosion_radius": 2,
+        "dilation_radius": 3
+      }
+    },
+    "min_pixels": 8,
+    "min_effective_patches": 1,
+    "prototypes_per_class": 6,
+    "kmeans_max_iter": 100,
+    "kmeans_tolerance": 0.0001,
+    "lambda_aux": 0.4,
+    "lambda_aux_schedule": "cosine_decay",
+    "lambda_aux_end": 0.3,
+    "lambda_aux_decay_start_ratio": 0.4,
+    "lambda_aux_decay_end_ratio": 0.7,
+    "lambda_presence": 0.1,
+    "lambda_align": 0.1,
+    "dice_weight": 1.0,
+    "ce_weight": 1.0,
+    "epochs": 150,
+    "batch_size": 24,
+    "num_workers": 4,
+    "learning_rate": 0.001,
+    "warmup_epochs": 5,
+    "warmup_start_lr": 0.0001,
+    "min_learning_rate": 1e-06,
+    "weight_decay": 0.0001,
+    "gradient_clipping": false,
+    "max_grad_norm": 1.0,
+    "save_interval": 50,
+    "seed": 2026,
+    "device": "cuda",
+    "resume_checkpoint": null,
+    "biomedclip_model_name": "hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224"
+  }
+}
